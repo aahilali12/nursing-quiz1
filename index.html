@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Foundations Quiz - Frontline Publications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-card">
+    <!-- Company Logo -->
+    <img src="logo.png" alt="Frontline Logo" class="company-logo" onerror="this.style.display='none'">
+
+    <div id="login-screen">
+        <h2>Student Access</h2>
+        <p>Unit-1: Nursing Foundations</p>
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Enter your full name...">
+        </div>
+        <button onclick="startApp()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+        <div class="progress-container"><div id="progress-bar"></div></div>
+        <h4 id="q-title" style="text-align: left; margin-bottom: 20px;">Question</h4>
+        <div id="options-container"></div>
+        <br>
+        <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div id="result-screen" class="hidden">
+        <div id="celebration-emoji" class="hidden">🎉🥳🎊</div>
+        <h2 id="final-name">Congratulations!</h2>
+        <p id="final-score" style="font-size: 1.5em; font-weight: 600; color: #2c3e50;"></p>
+        <button onclick="location.reload()">Try Again</button>
+    </div>
+</div>
+
+<!-- Link to JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
